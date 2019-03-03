@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+nav {
+  position: relative;
+  min-width: 100%;
+  height: 36px;
+  background-color: #114473;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+}
+nav .navInfo {
+  min-width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1125px) {
+  nav .navInfo {
+    min-width: 90%;
+  }
+}
+nav .navInfo .wrapperLinks {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inherit;
+  align-items: center;
+}
+nav .navInfo .wrapperLinks .link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 4%;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.67;
+  letter-spacing: normal;
+  text-align: left;
+  text-decoration: none;
+  color: #c9f5fe;
+}
+nav .navInfo .wrapperLinks .link:last-child {
+  margin-right: 0;
+}
+nav .navInfo .wrapperLinks .link:hover {
+  color: #fffa90;
+}
+nav .navInfo .wrapperPosition {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: inherit;
+  align-items: center;
+}
+nav .navInfo .wrapperPosition .position {
+  display: flex;
+  align-items: center;
+  padding: 12px 28px;
+  margin-right: 2px;
+  height: 100%;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #114473;
+  background-color: #9dcfff;
+  text-decoration: none;
+}
+nav .navInfo .wrapperPosition .position:hover {
+  background-color: #7abdff;
+  box-shadow: 0 0 9px 0 rgba(0,0,0,0.25);
+}
+.shopMenu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+.shopMenu .wrapperCategories {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+.shopMenu .wrapperCategories .category {
+  background-color: transparent;
+  width: 205px;
+  height: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.shopMenu .wrapperCategories .category:hover {
+  background-color: #5bdae3;
+  box-shadow: 0 0 9px 0 rgba(0,0,0,0.25);
+}
+.shopMenu .wrapperCategories .category .categoryInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shopMenu .wrapperCategories .category .categoryInfo .category-text {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+header {
+  position: relative;
+  z-index: 2;
+}
+header .wrapperHeaderInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .wrapperHeaderInfo .wrapperHeaderLogoBasketLocalization {
+  max-width: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+header .wrapperHeaderInfo .wrapperHeaderLogoBasketLocalization img {
+  cursor: pointer;
+}
+header .wrapperHeaderInfo .wrapperHeaderLogoBasketLocalization .wrapperBasketAndLocalization {
+  display: flex;
+  align-items: center;
+}
+header .wrapperHeaderInfo .wrapperHeaderLogoBasketLocalization .wrapperBasketAndLocalization .wrapperBasket {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.3;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  cursor: pointer;
+}
+header .wrapperHeaderInfo .wrapperHeaderLogoBasketLocalization .wrapperBasketAndLocalization .wrapperBasket img {
+  width: 36px;
+  height: 31px;
+  margin-right: 18px;
+}
+header .wrapperHeaderInfo .wrapperHeaderLogoBasketLocalization .wrapperBasketAndLocalization .wrapperLocalization {
+  display: flex;
+  list-style-type: none;
+}
+header .wrapperHeaderInfo .wrapperHeaderLogoBasketLocalization .wrapperBasketAndLocalization .wrapperLocalization li {
+  padding: 6px 4px;
+  background-color: #ffd16c;
+  color: #b36f32;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 17px 0 0;
+  transition: all 0.5s;
+}
+header .wrapperHeaderInfo .wrapperHeaderLogoBasketLocalization .wrapperBasketAndLocalization .wrapperLocalization li:last-child {
+  margin: 0;
+}
+header .wrapperHeaderInfo .wrapperHeaderLogoBasketLocalization .wrapperBasketAndLocalization .wrapperLocalization li.active {
+  background-color: transparent;
+}
+header .wrapperHeaderInfo .wrapperHeaderLogoBasketLocalization .wrapperBasketAndLocalization .wrapperLocalization li:hover {
+  box-shadow: 0 0 10px #9dcfff;
+}
+header .wrapperHeaderInfo .siteSearchWrapper {
+  width: 100%;
+  height: 36px;
+  border: solid 2px #00a2ad;
+  display: flex;
+  justify-content: center;
+}
+header .wrapperHeaderInfo .siteSearchWrapper .siteSearch {
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+header .wrapperHeaderInfo .siteSearchWrapper .siteSearch .searchIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 25px;
+}
+header .wrapperHeaderInfo .siteSearchWrapper .siteSearch .searchInput {
+  outline: none;
+  width: 100%;
+  font-family: 'Roboto';
+  font-size: 18px;
+  height: 100%;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 3.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00a2ad;
+  border: none;
+}
+header .wrapperHeaderInfo .siteSearchWrapper .siteSearch ::placeholder {
+  color: #00a2ad;
+}
+main {
+  position: relative;
+  z-index: 2;
+}
+main .categoryTitle {
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1961a6;
+}
+main .wrapperProductsInfo {
+  display: flex;
+}
+main .wrapperProductsInfo .wrapperFilters {
+  height: auto;
+  width: 305px;
+  box-sizing: border-box;
+}
+main .wrapperProductsInfo .wrapperFilters .filtersAcordeon {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  cursor: pointer;
+  user-select: none;
+}
+main .wrapperProductsInfo .wrapperFilters .filtersAcordeon .pointer {
+  user-select: none;
+  transition: transform 0.5s;
+}
+main .wrapperProductsInfo .wrapperFilters .wrapper-filters-block-close {
+  max-height: 0;
+  transition: max-height 0.1s ease-out;
+  overflow: hidden;
+}
+main .wrapperProductsInfo .wrapperFilters .wrapper-filters-block-open {
+  width: 90%;
+  max-height: 1500px;
+  transition: max-height 0.25s ease-in;
+  margin-left: 30px;
+}
+main .wrapperProductsInfo .wrapperFilters .wrapper-filters-block-open .filter-block {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+}
+main .wrapperProductsInfo .wrapperFilters .wrapper-filters-block-open .filter-block .filter-title {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1.5px solid #4da8ff;
+}
+main .wrapperProductsInfo .wrapperFilters .wrapper-filters-block-open .filter-block .filter-title .pointer {
+  user-select: none;
+  transition: transform 0.5s;
+}
+main .wrapperProductsInfo .wrapperFilters .wrapper-filters-block-open .filter-block .filter-wrapper-close {
+  max-height: 0;
+  transition: max-height 0.1s ease-out;
+  overflow: hidden;
+}
+main .wrapperProductsInfo .wrapperFilters .wrapper-filters-block-open .filter-block .filter-wrapper-open {
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
+  display: flex;
+  flex-direction: column;
+}
+main .wrapperProductsInfo .wrapperProductsPriceSort .sortBy {
+  width: 274px;
+  height: 37px;
+  background-color: #4da8ff;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  padding-left: 18px;
+}
+main .wrapperProductsInfo .wrapperProductsPriceSort .wrapperProducts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .wrapperProductsInfo .wrapperProductsPriceSort .wrapperProducts .productCard {
+  width: 33%;
+  height: auto;
+}
+main .wrapperProductsInfo .wrapperProductsPriceSort .wrapperProducts .productCard .productImage {
+  width: 90%;
+  height: auto;
+}
+main .wrapperProductsInfo .wrapperProductsPriceSort .wrapperProducts .productCard .wrapperInfoProduct {
+  width: 90%;
+}
+main .wrapperProductsInfo .wrapperProductsPriceSort .wrapperProducts .productCard .wrapperInfoProduct .ratingWrapper img {
+  margin-right: 9px;
+}
+main .wrapperProductsInfo .wrapperProductsPriceSort .wrapperProducts .productCard .wrapperInfoProduct .productName {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1961a6;
+}
+.template .backgroundTemplate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  margin: 0;
+}

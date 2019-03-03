@@ -1,0 +1,93 @@
+@import '../../components/nav/style.styl'
+@import '../../components/shop-menu/style.styl'
+header
+    position relative
+    z-index: 2
+    .wrapperHeaderInfo
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items:  center
+        .wrapperHeaderLogoBasketLocalization
+            max-width: 75%
+            width: 100%
+            display: flex
+            justify-content: space-between
+            padding: 18px 0
+            img
+                cursor: pointer
+            .wrapperBasketAndLocalization
+                display: flex
+                align-items: center
+                .wrapperBasket
+                    display: flex
+                    align-items: center
+                    font-family: 'Roboto';
+                    font-size: 20px;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 3.3;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #000000;
+                    cursor pointer
+                    img
+                        width: 36px
+                        height 31px
+                        margin-right: 18px
+                .wrapperLocalization
+                    display: flex
+                    list-style-type: none
+                    li
+                        padding: 6px 4px
+                        background-color: #ffd16c;
+                        color: #b36f32;
+                        font-family: 'Roboto';
+                        font-size: 16px;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        border-radius: 5px;
+                        cursor pointer
+                        margin: 0 17px 0 0
+                        transition: all .5s
+                        &:last-child
+                            margin 0                    
+                        &.active
+                            background-color: transparent
+                        &:hover
+                            box-shadow: 0 0 10px #9dcfff;    
+        .siteSearchWrapper
+            width: 100%
+            height: 36px;
+            border: solid 2px #00a2ad;
+            display: flex
+            justify-content: center
+            .siteSearch
+                display: flex
+                align-items: center
+                width: 75%
+                .searchIcon
+                    width: 20px
+                    height 20px
+                    margin-right: 25px
+                .searchInput
+                    outline: none
+                    width: 100%
+                    font-family: 'Roboto';
+                    font-size: 18px;
+                    height: 100%
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 3.67;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #00a2ad;
+                    border: none;
+                ::placeholder
+                    color: #00a2ad;
+                

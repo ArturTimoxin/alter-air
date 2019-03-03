@@ -1,0 +1,124 @@
+main
+    position relative
+    z-index 2
+    .categoryTitle
+        font-family: "Roboto";
+        font-size: 48px;
+        font-weight: 500;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1961a6;
+    .wrapperProductsInfo
+        display: flex
+        .wrapperFilters
+            height auto
+            width 305px
+            box-sizing: border-box
+            .filtersAcordeon
+                display flex
+                justify-content space-between
+                font-family: 'Roboto'
+                font-size: 18px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 2;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+                cursor pointer
+                user-select none
+                .pointer
+                    user-select: none
+                    transition: transform 0.5s
+            .wrapper-filters-block-close
+                max-height: 0;
+                transition: max-height 0.1s ease-out
+                overflow: hidden;
+            .wrapper-filters-block-open
+                width: 90%
+                max-height: 1500px;
+                transition: max-height 0.25s ease-in
+                margin-left: 30px
+                .filter-block
+                    display flex
+                    flex-direction: column;
+                    font-family: 'Roboto'
+                    font-size: 18px;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 2;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #000000;
+                    .filter-title
+                        display flex
+                        justify-content space-between
+                        font-family: 'Roboto'
+                        font-size: 18px;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 2;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #000000;
+                        cursor pointer
+                        user-select none
+                        border-bottom: 1.5px solid #4da8ff
+                        .pointer
+                            user-select: none
+                            transition: transform 0.5s
+                    .filter-wrapper-close
+                        max-height: 0;
+                        transition: max-height 0.1s ease-out
+                        overflow: hidden;
+                    .filter-wrapper-open
+                        max-height: 500px;
+                        transition: max-height 0.25s ease-in
+                        display: flex;
+                        flex-direction: column;
+        .wrapperProductsPriceSort
+            .sortBy
+                width: 274px;
+                height: 37px;
+                background-color: #4da8ff;
+                font-family: "Roboto";
+                font-size: 18px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 2;
+                letter-spacing: normal;
+                text-align: left;
+                color: #ffffff;
+                padding-left: 18px
+            .wrapperProducts
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap;
+                .productCard
+                    width: 33%
+                    height auto
+                    .productImage
+                        width: 90%
+                        height: auto
+                    .wrapperInfoProduct
+                        width: 90%
+                        .ratingWrapper
+                            img
+                                margin-right: 9px
+                        .productName
+                            font-family: 'Roboto';
+                            font-size: 24px;
+                            font-weight: 300;
+                            font-style: normal;
+                            font-stretch: normal;
+                            line-height: 1.5;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #1961a6;
